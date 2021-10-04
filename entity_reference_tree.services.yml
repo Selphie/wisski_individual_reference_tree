@@ -9,3 +9,8 @@ services:
     class: Drupal\entity_reference_tree\Tree\EntityTreeBuilder
     tags:
       - { name: entity_reference_tree_builder, priority: 1000 }
+  # WissKI individual builder    
+  entity_reference_wisski_individual_tree_builder:
+    class: Drupal\entity_reference_tree\Tree\WisskiIndividualTreeBuilder
+    tags:
+      - { name: entity_reference_tree_builder, priority: 1000 }

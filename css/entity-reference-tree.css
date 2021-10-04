@@ -1,4 +1,17 @@
+/* write all customized css things regarding the entity tree form here */
 #entity-reference-tree-selected-text {
   font-weight: 600;
   margin-top: 1em;
+}
+
+/* removes the check box from the first node;
+ * this is restricted to WissKI entities since we find this more applicable for our users
+ */
+body.path-wisski #entity-reference-tree-wrapper > ul.jstree-container-ul > li.jstree-node > a.jstree-anchor > i.jstree-checkbox{ 
+  display: none;
+}
+
+/* prevents the first node (= bundle) to be clickable */
+body.path-wisski #entity-reference-tree-wrapper > ul.jstree-container-ul > li.jstree-node > a.jstree-anchor {
+  pointer-events: none;
 }
